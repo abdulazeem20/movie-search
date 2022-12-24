@@ -1,0 +1,27 @@
+* {
+    margin    : 0 !important;
+    padding   : 0 !important;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background: $textColor;
+    color     : $fieldColor;
+}
+
+body {
+    width      : 100vw;
+    height     : 100vh;
+    display    : grid;
+    place-items: center;
+    background : $background;
+    overflow   : hidden;
+}
+
+$widths: (s: 480px, m: 720px, l: 1024px);
+
+@mixin responsive($width) {
+    @media screen and(min-width: map-get($widths, $width)) {
+        @content
+    }
+}
