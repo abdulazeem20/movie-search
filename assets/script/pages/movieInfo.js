@@ -7,7 +7,7 @@ export function MovieInfo(movie) {
                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
                 </div>
                 <div class="center">
-                    <img src="${location.origin}/assets/images/movies/${movie.image}" alt="" />
+                    <img src="assets/images/movies/${movie.image}" alt="" />
                     <div class="list">
                         <div><h5>Title: ${movie.title}</h5> </div>
                         <div> <h5>Director:</h5> <h5> ${movie.director}</h5> </div>
